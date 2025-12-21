@@ -3,4 +3,3 @@ This smart RC car focuses on detecting something is in its path and stops before
 
 https://www.youtube.com/watch?v=nRQBuy-paVU
 
-![IMG_0488](image-url)
