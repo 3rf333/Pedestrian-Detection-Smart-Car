@@ -25,8 +25,6 @@ This control loop repeats continuously, allowing the car to respond quickly to m
 
 The video below demonstrates the smart car driving forward, detecting motion in front of it, stopping the motors, activating the LED indicator, and then resuming motion after the delay, as described in the project design and implementation.
 
-<iframe width="560" height="315"<img width="294" height="187" alt="Screenshot 2025-12-22 at 9 43 20 PM" src="https://github.com/user-attachments/assets/787bb90a-8b43-40d0-b6b4-4a0f6384fad3" />
-
 src="https://www.youtube.com/embed/nRQBuy-paVU"
 title="Pedestrian Detection Smart Car Demo"
 frameborder="0"
@@ -75,21 +73,18 @@ A common ground is shared between the microcontroller, motor driver, and sensor 
 ## Experimental Results and AD2 Measurements
 
 **Normal Operation (No Motion Detected)**
-[AD2 waveform showing motors running](<img width="536" height="289" alt="Screenshot 2025-12-22 at 11 05 31 PM" src="https://github.com/user-attachments/assets/7d37e011-e156-42ce-9e7f-8b30b96f0cfd" />
-)
+<img width="536" height="289" alt="Screenshot 2025-12-22 at 11 05 31 PM" src="https://github.com/user-attachments/assets/7d37e011-e156-42ce-9e7f-8b30b96f0cfd" />
 
 This waveform shows the system operating under normal conditions when no motion is detected by the PIR sensor. The motor control signal remains at a steady voltage level, allowing the DC motors to continue driving the car forward. The LED output remains low, indicating that no object or motion is present in front of the vehicle.
 
 **Motion Detected (Motors Stopped)**
 
-![AD2 waveform showing motor shutdown and LED activation](<img width="510" height="387" alt="Screenshot 2025-12-22 at 11 12 43 PM" src="https://github.com/user-attachments/assets/8e10271e-5e74-49ab-a8b1-c577b654cb37" />
-)
+<img width="510" height="387" alt="Screenshot 2025-12-22 at 11 12 43 PM" src="https://github.com/user-attachments/assets/8e10271e-5e74-49ab-a8b1-c577b654cb37" />
 
 This waveform captures the system response when motion is detected by the PIR sensor. The sensor output transitions high, and the microcontroller immediately disables the motor driver, causing the motor control voltage to drop and the car to stop. At the same time, the LED output rises, indicating that motion has been detected and the system has entered its stop state.
 
 **Motor Re-Activation After Sensor Delay**
-
-![AD2 waveform showing motor voltage recovery](<img width="426" height="329" alt="Screenshot 2025-12-22 at 11 14 59 PM" src="https://github.com/user-attachments/assets/5f8280ba-617f-4ae3-86e2-ba48bcfdb714" />)
+<img width="426" height="329" alt="Screenshot 2025-12-22 at 11 14 59 PM" src="https://github.com/user-attachments/assets/5f8280ba-617f-4ae3-86e2-ba48bcfdb714" />
 
 
 This waveform shows the system behavior after the PIR sensor delay has elapsed. The LED output returns low and the motor control voltage rises again, re-enabling the motors and allowing the car to resume forward motion. A brief voltage overshoot is observed during motor startup, which is expected due to motor load and wiring effects.
@@ -103,5 +98,9 @@ Another challenge involved sensor selection. The project initially used an ultra
 ### Future Improvements
 
 There are several ways the project could be improved in the future. Adding multiple sensors around the car would allow detection from different directions and improve overall safety. Incorporating distance-based sensors could enable the car to slow down gradually instead of stopping abruptly when an object is detected. Additionally, implementing motor speed control using PWM would allow smoother motion and more realistic behavior, bringing the system closer to real-world autonomous vehicle operation.
+
+## AI Use Statement
+
+Artificial intelligence tools (ChatGPT) were used to assist with debugging and understanding code during the development of this project. All system design, testing, and results were completed by the project team.
 
 Documentation: https://docs.google.com/document/d/1qVt2LgvRY7-j_iaigUQTmMgnjjfXFBuBFuLY0SI5S8E/edit?tab=t.0#heading=h.lgktv86arj0
