@@ -44,18 +44,22 @@ The smart car system is built using a combination of low-cost embedded hardware 
 
 - **L298N Dual H-Bridge Motor Driver**  
   Used to control the DC motors of the RC car. The motor driver receives control signals from the microcontroller and supplies sufficient current to drive the front and rear motors.
+
 <img width="294" height="187" alt="Screenshot 2025-12-22 at 9 43 20 PM" src="https://github.com/user-attachments/assets/d80187af-c9e4-4d80-a815-4397d8f408aa" />
 
 - **AM312 PIR Motion Sensor**  
   Detects motion in front of the vehicle. When motion is detected, the sensor outputs a signal to the microcontroller, triggering the car to stop.
+
 <img width="265" height="199" alt="Screenshot 2025-12-22 at 9 51 03 PM" src="https://github.com/user-attachments/assets/ded1ea65-8538-4aa7-b801-6f48a3adbdd7" />
 
 - **4WD Smart Car DC Motors**  
   Provides the mechanical platform for the project. The front and rear motors are wired in series to ensure synchronized movement.
+
 <img width="337" height="329" alt="Screenshot 2025-12-22 at 9 53 04 PM" src="https://github.com/user-attachments/assets/c0f31cd8-f90c-4743-bd7a-11c4a79fc6d7" />
 
 - **LED and Current-Limiting Resistor**  
   Used as a visual indicator to show when motion has been detected and the car has stopped.
+
 <img width="191" height="163" alt="Screenshot 2025-12-22 at 9 59 23 PM" src="https://github.com/user-attachments/assets/fccd6491-edda-41af-b71e-428143ef0836" />
 
 - **Battery Power Supply**  
@@ -73,10 +77,13 @@ The STM32 microcontroller sends control signals to the L298N motor driver to man
 The PIR motion sensor is connected to a GPIO input pin and outputs a digital signal when motion is detected in front of the vehicle. An LED indicator is connected to a separate GPIO output pin through a current-limiting resistor to provide visual feedback when motion is detected.
 
 A common ground is shared between the microcontroller, motor driver, and sensor to ensure reliable signal reference and stable system operation.
+
 <img width="822" height="499" alt="Screenshot 2025-12-18 at 12 36 38 PM" src="https://github.com/user-attachments/assets/4bd06c9f-8145-47ff-9eea-e2fb9cc606e8" />
+
 ## Experimental Results and AD2 Measurements
 
 **Normal Operation (No Motion Detected)**
+
 <img width="536" height="289" alt="Screenshot 2025-12-22 at 11 05 31 PM" src="https://github.com/user-attachments/assets/7d37e011-e156-42ce-9e7f-8b30b96f0cfd" />
 
 
