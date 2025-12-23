@@ -3,7 +3,9 @@
 
 This project demonstrates a **smart RC car** that detects motion in front of it and **automatically stops to prevent collisions**. The system is inspired by real-world autonomous vehicle safety features and was developed as a final project for ENGR 478.
 Using an **STM32 microcontroller**, a **PIR motion sensor**, and a **motor driver**, the car continuously monitors its path while driving forward. When motion is detected, the system immediately disables the motors, activates a visual LED indicator, waits briefly, and then resumes movement once the area is clear.
+
 <img width="727" height="547" alt="Screenshot 2025-12-22 at 9 47 04 PM" src="https://github.com/user-attachments/assets/ea1acdcf-4cc0-41ea-b943-19d0474a16af" />
+
 ## How the System Works
 
 The smart car follows a simple control logic implemented on the STM32 NUCLEO-L476RG microcontroller. The system continuously monitors a PIR motion sensor while the car is driving forward.
