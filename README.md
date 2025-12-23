@@ -25,12 +25,13 @@ This control loop repeats continuously, allowing the car to respond quickly to m
 ## Project Demonstration Video
 
 The video below demonstrates the smart car driving forward, detecting motion in front of it, stopping the motors, activating the LED indicator, and then resuming motion after the delay, as described in the project design and implementation.
+## Project Demonstration Video
 
-src="https://www.youtube.com/embed/nRQBuy-paVU"
-title="Pedestrian Detection Smart Car Demo"
-frameborder="0"
-allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-allowfullscreen></iframe>
+Click the image below to watch the project demonstration video.
+
+[![Pedestrian Detection Smart Car Demo](https://img.youtube.com/vi/nRQBuy-paVU/0.jpg)](https://www.youtube.com/watch?v=nRQBuy-paVU)
+
+
 
 ## Hardware Components
 
